@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="Input">
+<button onclick="Seach()">Seach</button>
+<br>
+<br>
+<span id="display"></span>
+<script>
+    function Seach() {
+        let Vietnames = ["chanh", "chuoi", "dua hau", "ca chua"];
+        let English = ["lemon", "banana", "watermelon", "tomato"];
+        let input = document.getElementById('Input').value;
+        for (let i = 0; i < Vietnames.length; i++){
+            if (input == Vietnames[i]){
+                document.getElementById('display').innerHTML = English[i];
+            } else if (input == English [i]){
+                document.getElementById('display').innerHTML = Vietnames[i];
+            }
+
+        }
+
+    }
+</script>
+
+</body>
+</html>
